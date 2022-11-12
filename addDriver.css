@@ -1,0 +1,25 @@
+.container{
+    width: 35%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 250px;
+    margin-bottom: 350px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.heading{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-bottom: 25px;
+}
+
+body{
+    background: -webkit-linear-gradient(to right, #3aa688, #7CFFCB);
+    background: linear-gradient(to right, #3aa688, #7CFFCB);
+    min-height: 100vh;
+}

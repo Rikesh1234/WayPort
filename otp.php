@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Autofocus Field</title>
+	<link rel="stylesheet" type="text/css" href="otp.css">
+</head>
+<body>
+	<div class="container">
+		<h1>ENTER OTP</h1>
+		<div class="userInput">
+			<input type="text" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+			<input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+			<input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+			<input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+			<input type="text" id="fifth" maxlength="1">
+		</div>
+		<button>CONFIRM</button>
+	</div>
+</body>
+<script src="otp.js"></script>
+</html>

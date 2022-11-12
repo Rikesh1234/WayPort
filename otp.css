@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+background: linear-gradient(to right, #BBDBBE, #DEEBDD);
+
+}
+
+.container{
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	align-items: space-around;
+	justify-content: center;
+}
+
+.userInput{
+	display: flex;
+	justify-content: center;
+}
+
+input{
+	margin: 10px;
+	height: 35px;
+	width: 65px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+	background: #eef2f3;
+
+}
+
+h1{
+	text-align: center;
+	font-family: arimo;
+	color: rgb(84, 172, 57);
+}
+
+
+button{
+	width: 150px;
+	height: 40px;
+	margin: 25px auto 0px auto;
+	font-family: arimo;
+	font-size: 1.1rem;
+	border: none;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	background: rgb(31 163 101);  /* fallback for old browsers */
+
+}
+
+
+
+
+
+
+

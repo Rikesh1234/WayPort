@@ -1,0 +1,25 @@
+.navbar{
+    padding-top: 15px !important;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.sticky{
+    padding: 50px;
+    background-color: var(--color);
+    opacity: 0.8;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(25, 189, 112);
+    text-decoration: none;
+  }
+
+  .navbar.sticky a:hover{
+    color: rgb(255, 236, 236);
+  }

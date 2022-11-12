@@ -1,0 +1,190 @@
+.container {
+    padding: 2rem 0rem;
+}
+h4 {
+    margin: 2rem 0rem 1rem;
+}
+.table-image td, .table-image th {
+    vertical-align: middle;
+}
+
+.table-fixed tbody {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+    display: block;
+}
+.table-fixed tbody td, .table-fixed tbody th, .table-fixed thead > tr > th {
+    float: left;
+    position: relative;
+}
+.table-fixed tbody td::after, .table-fixed tbody th::after, .table-fixed thead > tr > th::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+body {
+    background: linear-gradient(to right, #74F2CE, #7CFFCB);
+    min-height: 100vh;
+}
+
+.modal {
+    position: fixed ;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px !important;
+    height: auto !important;
+    max-width: 80%;
+    display: block !important;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal .modal-header {
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bolder;
+  }
+  
+  .modal .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: gray;
+    transition: all 0.3s ease;
+  }
+  
+  .modal .modal-header .close-button:hover{
+    color: #000;
+  }
+  
+  .modal .modal-body {
+    padding: 10px 15px;
+    margin: 15px;
+  }
+  
+  .modal .modal-body .form input[type="text"]{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgb(183, 177, 177);
+    border-radius: 5px;
+  }
+  
+  .modal .modal-body .form input[type="text"]:focus{
+    border: 1px solid rgb(82, 150, 213);
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+  }
+  
+  
+  .modal .modal-body .form .name{
+    width: 100%;
+    height: 33px;
+  }
+  
+  .modal .modal-body .form .box{
+    display: flex;
+    width: 102%;
+    justify-content: space-between;
+  }
+  
+  .modal .modal-body .form .product, 
+  .modal .modal-body .form .contact, 
+  .modal .modal-body .form .email, 
+  .modal .modal-body .form .address{
+    width: calc(100%/2);
+    height: 33px;
+    border: 1px solid black;
+  }
+  
+  .modal .modal-body .form  .message{
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgb(183, 177, 177) ;
+  }
+  
+  .modal .modal-body .form  .message:focus{
+    border: 1px solid rgb(82, 150, 213);
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+  }
+  
+  .modal .modal-body .form  .mdl-btn{
+    width: 25%;
+    height: 33px;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-size: 19px;
+    padding: 2px 16px;
+    background-color: #4070F4;
+    margin: 10px 14px 25px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .modal .modal-body .form  .mdl-btn:hover{
+    background: #265DF2;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+
+.btnn{
+    background-color: rgb(21, 202, 118);
+    border-radius:5%;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: -50px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btnn:hover{
+    background-color: rgb(22, 212, 123);
+}

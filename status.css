@@ -1,0 +1,25 @@
+/* * * ========================================== * CUSTOM UTIL CLASSES * ========================================== * */
+.table-fixed tbody {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+    display: block;
+}
+.table-fixed tbody td, .table-fixed tbody th, .table-fixed thead > tr > th {
+    float: left;
+    position: relative;
+}
+.table-fixed tbody td::after, .table-fixed tbody th::after, .table-fixed thead > tr > th::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+/* * * ========================================== * FOR DEMO PURPOSES * ========================================== * */
+body {
+    background: #74ebd5;
+    background: -webkit-linear-gradient(to right, #74F2CE, #7CFFCB);
+    background: linear-gradient(to right, #74F2CE, #7CFFCB);
+    min-height: 100vh;
+}
